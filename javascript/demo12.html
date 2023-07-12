@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style="text-align:center;" id="e"></p>
+    <!-- <input type="button" value="button" onclick="abc()"> -->
+    <script>
+        
+        function emp(fn,ln,age,salary){
+            // console.log(firstname);
+            // console.log(lastname);
+            // console.log(age);
+            // console.log(salary);
+            this.fn=fn;
+            this.ln=ln;
+            this.age=age;
+            this.salary=salary;
+        }
+
+        emp.prototype.desig = "developer";
+        const myemp = new emp("jonny","jonny",18,1000);
+        document.getElementById('e').innerHTML = "my name is "+ myemp.fn "my salary is "+ myemp.salary "desig is" + myemp.desig
+    </script>
+</body>
+</html>

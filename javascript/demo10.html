@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function valid(){
+           name=document.getElementById("uname").value;
+
+           if(name.length == 0 || name.length == null || name.length == undefined)
+           {
+                    // alert("name should be required");
+                    document.getElementById('msg').innerText = "name should be required";
+            }
+            else if(name.length >=0 && name.length <=3){
+                // alert("name letter should be 3 or more");
+                document.getElementById('msg').innerText = "name letter should be 3 or more";
+            }
+            else if(name.length=10){
+                // alert("name leter should be 3-10");
+                document.getElementById('msg').innerHTML = "<p style='color:red;'>name leter should be 3-10</p>"
+            }
+            else{
+                alert("name is okay");
+            }
+        }
+    </script>
+</head>
+<body style="text-align:center">
+    <h1>validation demo</h1>
+
+    USERNAME :
+    <input id="uname" type="text"><br><br>
+    <span id="msg"></span><br><br>
+
+    <input type="button" value="click"  onclick="valid()">
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(value){
+            a = parseInt(document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+
+            if(value == "add"){
+                result = a + b;
+                document.f1.c.value = result;
+            }
+            else if(value == "sub"){
+                result = a - b;
+                document.f1.c.value = result;
+            }
+            else if(value == "mul"){
+                result = a * b;
+                document.f1.c.value = result;
+            }
+            else if(value == "div"){
+                result = a / b;
+                document.f1.c.value = result;
+            }
+
+            // a = parseInt(document.f1.a.value);
+            // b = parseInt(document.f1.b.value);
+            // c = a + b;
+            // document.f1.c.value = c
+        }
+        
+    </script>
+</head>
+<body bgcolor="yellow" style="text-align: center;">
+    <h1>calculator</h1>
+    <form name="f1">
+         a : <input type="number" name="a"><br><br>
+         b : <input type="number" name="b"><br><br>
+         c : <input type="number" name="c"><br><br>
+
+        <input type="button" value="add" onclick="cal(value)"> 
+        <input type="button" value="sub" onclick="cal(value)"> 
+        <input type="button" value="mul" onclick="cal(value)"> 
+        <input type="button" value="div" onclick="cal(value)"> 
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function getfullname(){
+        Fname = document.f1.fn.value;
+        Lname = document.f1.ln.value;
+        Fullname = Fname+Lname;
+        document.f1.full.value=Fullname;
+       }
+       function aaa(){
+        document.getElementById("fc").style.backgroundColor = "green";
+       }
+       function bgclr(value){
+        document.getElementById("mypage").style.backgroundColor = value;
+       }
+    </script>
+</head>
+<body id="mypage" style="text-align: center;">
+
+   <marquee onmouseover="stop()" onmouseout="start()"> <h1>Event or action demo</h1> </marquee>
+
+   <!-- <input type="button" value="click" onclick="singleclick()"> 
+   <input type="button" value="double click" ondblclick="doublebclick()">-->
+
+<form name="f1">
+    Fname : <input type="text" name="fn" id="fc" onfocus="aaa()"><br><br>
+    Lname : <input type="text" name="ln"><br><br>
+    Fullname : <input type="text" name="full" onfocus="getfullname()">
+
+    <input type="button" value="full name" onclick="getfullname()">
+
+    <select onchange="bgclr(value)">
+    <option>choose</option>
+    <option value="blue">blue</option>
+    <option value="red">red</option>
+    <option value="green">green</option>
+    <option value="yellow">black</option>
+    <option value="pink">pink</option>
+    </select>
+
+
+</form>
+
+
+</body>
+</html>

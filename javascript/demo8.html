@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(){
+            sub1 : parseInt(document.f1.sub1.value);
+            eng  : parseInt(document.f1.eng.value);
+            hin  : parseInt(document.f1.hin.value);
+            sci  : parseInt(document.f1.sci.value);
+            mat  : parseInt(document.f1.mat.value);
+            soc  : parseInt(document.f1.social.value);
+            total = sub1 + eng + hin + sci + mat + soc ;
+            document.f1.total.value = total;
+
+        }
+
+    </script>
+</head>
+<body style="text-align:center;" >
+    
+    <form name="f1">
+       Subject 1 :      <input type="number" name="sub1"><br><br>
+       english :        <input type="number" name="eng"><br><br>
+       Hindi :          <input type="number" name="hin"><br><br>
+       science :        <input type="number" name="sci"><br><br>
+       maths :          <input type="number" name="mat"><br><br>
+       social science : <input type="number" name="social"><br><br>
+       total          : <input type="number" name="total"><br><br>
+
+
+       <input type="button" value="total" onclick="cal()"> 
+       <input type="button" value="percentage" onclick="cal()"><br><br>
+       <input type="button" value="calculate" onclick="cal()">
+       <input type="button" value="reset" onclick="cal()">
+    </form>
+
+
+
+
+</body>
+</html>

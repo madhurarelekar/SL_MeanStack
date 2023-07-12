@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            a = parseInt(document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            c = a + b;
+            document.f1.c.value = c
+        }
+        function sub(){
+            a = parseInt(document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            c = a - b;
+            document.f1.c.value = c
+        }
+        function mul(){
+            a = parseInt(document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            c = a * b;
+            document.f1.c.value = c
+        }
+        function div(){
+            a = parseInt(document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            c = a / b;
+            document.f1.c.value = c
+        }
+    </script>
+</head>
+<body bgcolor="yellow" style="text-align: center;">
+    <h1>calculator</h1>
+    <form name="f1">
+         a : <input type="number" name="a"><br><br>
+         b : <input type="number" name="b"><br><br>
+         c : <input type="number" name="c"><br><br>
+
+        <input type="button" value="add" onclick="add()"> 
+        <input type="button" value="sub" onclick="sub()"> 
+        <input type="button" value="mul" onclick="mul()"> 
+        <input type="button" value="div" onclick="div()"> 
+
+    </form>
+</body>
+</html>

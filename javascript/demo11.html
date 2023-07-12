@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myage(){
+            age=document.getElementById("age").value;
+            if(age<18){
+                alert("invalid age")
+                newage=prompt("please enter the correct age");
+                resp=confirm("is it a correct age ?")
+                if(resp){
+                    document.write("good");
+                }
+                else{
+                    document.write("please enter again..")
+                }
+            }
+            else{
+                alert("valid age");
+            }
+        }
+    </script>
+</head>
+<body style="text-align:center;">
+
+<input type="text" id="age">
+
+<input type="button" value="Enter age" onclick="myage()">
+
+</body>
+</html>
